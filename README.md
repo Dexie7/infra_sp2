@@ -16,7 +16,6 @@ API проекта YaMDb дает возможность просматрива�
 - Docker-compose 3.8
 
 ### Как запустить проект через Docker:
-```
 Запустите docker-compose командой:
 ```
 docker-compose up -d --build
@@ -29,5 +28,6 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 Команды для заполнения базы данными (копирование фикстур в запущенный контейнер):
 ```
-docker-compose exec web python manage.py dumpdata > fixtures.json 
+/infra_sp2$ cd infra
+docker-compose exec web python manage.py dumpdata > fixtures.json
 ```

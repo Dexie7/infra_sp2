@@ -14,7 +14,6 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -60,7 +59,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': os.getenv(
@@ -74,7 +72,6 @@ DATABASES = {
     }
 }
 AUTH_USER_MODEL = 'reviews.User'
-
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -108,7 +105,6 @@ SIMPLE_JWT = {
 }
 
 
-
 LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'Europe/Moscow'
@@ -118,7 +114,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 
 STATIC_URL = '/static/'
